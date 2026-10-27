@@ -1,23 +1,120 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site no GitHub Pages</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
-            margin-top: 100px;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-    <h1>Olá, Mundo!</h1>
-    <p>Meu site hospedado no GitHub Pages está funcionando perfeitamente.</p>
-</body>
-</html>
+/* Topo / Cabeçalho do Site */
+    header {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 28px;
+        color: #1a1a1a;
+    }
+
+    header p {
+        margin: 5px 0 0;
+        color: #666;
+        font-size: 16px;
+    }
+
+    /* Container que segura todos os Cards de Produtos */
+    .container {
+        width: 90%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+
+    /* O Bloco de cada Produto (Card) */
+    .product-card {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .product-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Imagem do Produto */
+    .product-image {
+        width: 90px;
+        height: 90px;
+        border-radius: 8px;
+        object-fit: cover;
+        background-color: #eee;
+    }
+
+    /* Informações do Produto */
+    .product-info {
+        flex: 1;
+    }
+
+    .product-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 0 5px 0;
+        color: #222;
+    }
+
+    .product-description {
+        font-size: 13px;
+        color: #777;
+        margin: 0 0 12px 0;
+        line-height: 1.4;
+    }
+
+    /* Botão de Compra */
+    .buy-button {
+        display: inline-block;
+        background-color: #ff4747; /* Cor vermelha chamativa */
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: bold;
+        transition: background-color 0.2s;
+    }
+
+    .buy-button:hover {
+        background-color: #e03131;
+    }
+</style>
+<header>
+    <h1>🛒 Achou, Comprou!</h1>
+    <p>Os melhores achados e promoções da internet</p>
+</header>
+
+<div class="container">
+
+    <!-- CARD DO PRODUTO 1 (Exemplo) -->
+    <div class="product-card">
+        <!-- Coloque o link de uma imagem real no src quando tiver -->
+        <img class="product-image" src="https://placeholder.com" alt="Produto 1">
+        <div class="product-info">
+            <h2 class="product-title">Fone de Ouvido Sem Fio Bluetooth</h2>
+            <p class="product-description">Bateria de longa duração, cancelamento de ruído ativo e excelente qualidade de som.</p>
+            <a href="https://exemplo.com" target="_blank" class="buy-button">Ver Produto</a>
+        </div>
+    </div>
+
+    <!-- CARD DO PRODUTO 2 (Exemplo) -->
+    <div class="product-card">
+        <img class="product-image" src="https://placeholder.com" alt="Produto 2">
+        <div class="product-info">
+            <h2 class="product-title">Carregador Rápido Baseus 30W</h2>
+            <p class="product-description">Carregamento turbo para celular e notebook com proteção contra surtos elétricos.</p>
+            <a href="https://exemplo.com" target="_blank" class="buy-button">Ver Produto</a>
+        </div>
+    </div>
+
+</div>
